@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website Design Services in Reno NV.">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Mark D. Albin, MS.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="./Content/bootstrap.min.css" rel="stylesheet">
+    <link href="./Content/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./Content/custom.css" rel="stylesheet">
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#HelpButton').click(function () {
+                $('#MyDiv').load('HelpDetails.html #MainTOC');
+            });
+            $('#HelpButtonGet').click(function () {
+                $.get('HelpDetails.html', function (data) {
+                    $('#OutPutDiv').html(data);
+                });
+            })
+            $('#HelpButtonGetJSON').click(function () {
+                $.getJSON('test.json', function (json) {
+                    $('#jsonDiv').html("Please work " + json.name + '<br>' + "Location " + json.location);
+                });
+            });
+            $('#HelpButtonBitcoinGetJSON').click(function () {
+                $.getJSON('https://apiv2.bitcoinaverage.com/indices/global/ticker/BTCUSD', {
+                    fiet: "USD", format: "json"
+                },
+                    function (data) {
+                         $('#bitcoinDiv').html(data);
+                    }
+                );
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="jumbotron" style="background-color:azure">
+        <div class="container">
+            <h1 class="text-center">Bootstrap 4 - jQueury-Jason</h1>
+        </div>
+    </div>
+    <hr />
+    <main style="background-color:lightgray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="p-4 card ">
+                        <div class="card-body">
+                            <h4 class="card-title">Contact Us</h4>
+                            <p class="card-text">
+                                <button id="HelpButton">Help using .document.ready</button>
+                            </p>
+                            <p>
+                                <button id="HelpButtonGet">Help Using get()</button>
+                            </p>
+                            <p>
+                                <button id="HelpButtonGetJSON">Help Using getJSON()</button>
+                            </p>
+                            <p>
+                                <button id="HelpButtonBitcoinGetJSON">Bitcoin Data getJSON()</button>
+                            </p>
+                            <p>
+                                <div id="MyDiv">
+                                    <h1>My Div</h1>
+                                </div>
+                                <div id="OutPutDiv">
+                                    <h1>Out Put Div</h1>
+                                </div>
+                                <div id="jsonDiv">
+
+                                </div>
+                                <div id="bitcoinDiv">
+
+                                </div>
+                            </p>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr />
+    <footer style="background-color:dodgerblue">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="text-center">Footer Section 1</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">Footer Section 2</h2>
+                </div>
+                <div class="col-md-4">
+                    <h2 class="text-center">Footer Section 3</h2>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+</body>
+</html>
