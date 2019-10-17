@@ -12,6 +12,63 @@
         <link href="./Content/custom.css" rel="stylesheet">
   </head>
   <body>
+      <header>
+          <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+          <div id="TopButtons" class="row">
+              <div class="container mb-0">
+                  <ul class="form-inline float-right" style="list-style: none">
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><span class="icon fa fa-user" aria-hidden="true" style="padding-right: 5px;"></span> Sign In </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"><span class="icon fa fa-shopping-cart" aria-hidden="true"></span> Shopping Cart</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="container intro" role="banner">
+                  <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                      <a href="#" title="Bootstrap 4 Home">
+                          Bootstrap 4 Home
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <div class="mt-0 mb-0 pt-2 pb-2" style="background-color: #036; margin-top: 0px; margin-bottom: 0px;">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span> Main Menu
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="https://markdalbin.github.io/cv/index.html">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Examples
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                  <a class="dropdown-item" href="modal.html">Modal Example</a>
+                                  <a class="dropdown-item" href="nav.html">Navbar Example</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="flex-example.html">Flex-Box Example</a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <form action="#" method="get" class="form-inline my-2 my-lg-0 all float-sm-right">
+                      <input title="Search" name="search" class="form-control mr-sm-1" type="search" placeholder="Search">
+                      <button aria-label="Submit Search" class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+                  </form>
+              </nav>
+          </div>
+      </div>
       <div class="jumbotron jumbotron-fluid bg-dark">
           <div class="jumbotron-background">
               <img src="./Images/it-coverphoto.jpg" class="blur ">
@@ -64,17 +121,12 @@
           </div>
       </main>
       <hr />
-      <footer style="background-color:dodgerblue">
+      <footer>
           <div class="container">
               <div class="row">
-                  <div class="col-md-4">
-                      <h2 class="text-center">Footer Section 1</h2>
-                  </div>
-                  <div class="col-md-4">
-                      <h2 class="text-center">Footer Section 2</h2>
-                  </div>
-                  <div class="col-md-4">
-                      <h2 class="text-center">Footer Section 3</h2>
+                  <div class="col-md-12 justify-content-center text-center m-4">
+                      <p><a href="#">Mark D. Albin, MS</p>
+                      <p class="m-0-0 p-0"><a href="#">Copyright</a> | <a href="#">Privacy</a> | <a href="#">Accessibility</a></p>
                   </div>
               </div>
           </div>
@@ -85,7 +137,7 @@
       <script src="Scripts/popper.min.js"></script>
       <script src="Scripts/bootstrap.min.js"></script>
       <script>
-        $(function () { objectFitImages() });
+          $(function () { objectFitImages() });
       </script>
   </body>
 </html>
