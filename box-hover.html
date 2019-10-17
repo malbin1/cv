@@ -19,37 +19,98 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="jumbotron" style="background-color:azure">
-
-                <h1 class="text-center">Bootstrap 4 - jQuery-Jason</h1>
+        <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+        <div id="TopButtons" class="row">
+            <div class="container mb-0">
+                <ul class="form-inline float-right" style="list-style: none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="icon fa fa-user" aria-hidden="true" style="padding-right: 5px;"></span> Sign In </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="icon fa fa-shopping-cart" aria-hidden="true"></span> Shopping Cart</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container intro" role="banner">
+                <div class="row" style="padding-top: 20px; padding-bottom: 20px;">
+                    <a href="#" title="Bootstrap 4 Home">
+                        Bootstrap 4 Home
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+    <div class="mt-0 mb-0 pt-2 pb-2" style="background-color: #036; margin-top: 0px; margin-bottom: 0px;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> Main Menu
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://markdalbin.github.io/cv/Index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Examples
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="modal.html">Modal Example</a>
+                                <a class="dropdown-item" href="nav.html">Navbar Example</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="flex-example.html">Flex-Box Example</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" method="get" class="form-inline my-2 my-lg-0 all float-sm-right">
+                    <input title="Search" name="search" class="form-control mr-sm-1" type="search" placeholder="Search">
+                    <button aria-label="Submit Search" class="btn btn-outline-success my-2 my-sm-0" type="submit" value="Submit"><span class="icon fa fa-search" aria-hidden="true"></span></button>
+                </form>
+            </nav>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+            <img src="./Images/it-coverphoto.jpg" class="blur ">
+        </div>
+        <div class="container text-white">
+            <h1 class="display-4">Bootstrap 4.o</h1>
+            <p class="lead">This is a modal.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        </div>
+    </div>
     <hr />
-    <main>
-        <div class="mt-5 mb-5 pt-5 pb-5"">
+    <main id="main">
+        <div class="mt-5 mb-5 pt-5 pb-5" ">
             <div class="container mt-5 mb-5">
                 <div class="d-flex justify-content-center mt-5 mv-5">
                     <div class="card-group">
                         <div class="card p-2 m-2">
                             <div class="card-body">
-                                <h4 class="card-title">Professional Development</h4>
-                                <p class="card-text"> Noncredit professional and workforce development courses and certificates in a wide array of up-to-the-minute topics provide the opportunity to learn, explore and share practical information, resources and strategies for immediate application in the real world. Exceptional instructors and a first-rate curriculum offer fresh perspectives, competitive tools and best practices that can enrich and strengthen even the finest employees, and organizations.</p>
-                                <a class="align-bottom btn btn-block btn-primary" style="margin-top: auto;" href="https://exreg.unr.edu/eCS/Heading.aspx?heading_id=1">More about Professional Development</a>
+                                <h4 class="card-title">Test Development</h4>
+                                <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Varius duis at consectetur lorem donec massa sapien faucibus. Adipiscing commodo elit at imperdiet dui accumsan sit amet nulla. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Nisl nisi scelerisque eu ultrices. Quis imperdiet massa tincidunt nunc pulvinar sapien et. In dictum non consectetur a erat nam at lectus. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Amet est placerat in egestas erat imperdiet sed euismod. Id velit ut tortor pretium viverra suspendisse. Sit amet nisl suscipit adipiscing bibendum est ultricies integer quis. Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Sit amet volutpat consequat mauris nunc congue. Tortor condimentum lacinia quis vel. Ac odio tempor orci dapibus ultrices in iaculis nunc sed.</p>                                <a class="align-bottom btn btn-block btn-primary" style="margin-top: auto;" href="https://exreg.unr.edu/eCS/Heading.aspx?heading_id=1">More about Professional Development</a>
                             </div>
                         </div>
                         <div class="card p-2 m-2">
                             <div class="card-body">
-                                <h4 class="card-title">Gaming Management</h4>
-                                <p class="card-text">Extended Studies offers gaming education opportunities including management programs and seminars on the University campus, short and weeklong courses offered around the globe, an international executive development program, as well as customized on-site programs available anywhere in the world — all designed by industry leaders and University faculty.</p>
+                                <h4 class="card-title">Test Management</h4>
+                                <p class="card-text">
+                                    Tincidunt eget nullam non nisi est. Arcu bibendum at varius vel pharetra vel. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Elit sed vulputate mi sit amet mauris commodo. Ultrices tincidunt arcu non sodales neque sodales ut. Sit amet massa vitae tortor condimentum. Volutpat est velit egestas dui id ornare arcu. Mauris augue neque gravida in fermentum et. Eget nunc scelerisque viverra mauris in aliquam. Sed elementum tempus egestas sed sed risus pretium. Commodo ullamcorper a lacus vestibulum sed. Dolor sit amet consectetur adipiscing elit duis tristique. Eget gravida cum sociis natoque penatibus et magnis dis parturient. Ultricies tristique nulla aliquet enim tortor at auctor urna. Odio aenean sed adipiscing diam donec. Sit amet cursus sit amet dictum sit. Vitae semper quis lectus nulla at. Elementum facilisis leo vel fringilla est. Accumsan sit amet nulla facilisi morbi tempus. Ut morbi tincidunt augue interdum velit euismod in pellentesque massa.
+                                </p>
                                 <a class="align-bottom btn btn-block btn-primary" style="margin-top: auto;" href="Gaming.html">More about Gaming Management</a>
                             </div>
                         </div>
                         <div class="card p-2 m-2">
                             <div class="card-body">
-                                <h4 class="card-title">Academic Credit Options</h4>
-                                <p class="card-text">Academic credit courses for undergraduate and graduate degrees, teacher recertification and career advancement are offered each semester through Academic Credit Options (ACO). ACO offers late-start short courses that start after the regular semester begins, evening and weekend classes, workshops, institutes, and travel programs for academic credit from a variety of University colleges, departments and programs.</p>
+                                <h4 class="card-title">Test Credit Options</h4>
+                                <p class="card-text">Sit amet luctus venenatis lectus magna fringilla urna. Varius morbi enim nunc faucibus a pellentesque. Ultricies integer quis auctor elit sed vulputate. Interdum velit laoreet id donec ultrices. Elit ut aliquam purus sit. Adipiscing elit duis tristique sollicitudin nibh sit amet. Habitasse platea dictumst quisque sagittis. Ullamcorper dignissim cras tincidunt lobortis feugiat. Nulla pharetra diam sit amet nisl suscipit adipiscing. Adipiscing elit ut aliquam purus sit amet. Libero volutpat sed cras ornare. Maecenas pharetra convallis posuere morbi leo urna. Habitant morbi tristique senectus et netus et.</p>
                                 <a class="d-flex align-items-end align-content-end align-baseline btn btn-block btn-primary" href="ACO.html">More about Academic Credit Options</a>
                             </div>
                         </div>
@@ -59,21 +120,23 @@
         </div>
     </main>
     <hr />
-    <footer style="background-color:dodgerblue">
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 1</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 2</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 3</h2>
+                <div class="col-md-12 justify-content-center text-center m-4">
+                    <p><a href="#">Mark D. Albin, MS</a></p>
+                    <p class="m-0-0 p-0"><a href="#">Copyright</a> | <a href="#">Privacy</a> | <a href="#">Accessibility</a></p>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        $(function () { objectFitImages() });
+    </script>
 </body>
 </html>
