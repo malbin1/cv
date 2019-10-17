@@ -38,3 +38,9 @@ img.blur {
     filter: blur(4px);
     filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
 }
+
+#navbar-container {
+    background-color: #036;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
