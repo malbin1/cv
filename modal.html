@@ -12,79 +12,89 @@
     <link href="./Content/custom.css" rel="stylesheet">
 </head>
 <body>
-    <div class="jumbotron" style="background-color:azure">
-        <div class="container">
-            <h1 class="text-center">Bootstrap 4 - Modals</h1>
+    <div class="jumbotron jumbotron-fluid bg-dark">
+        <div class="jumbotron-background">
+            <img src="./Images/it-coverphoto.jpg" class="blur ">
         </div>
-    </div>
-    <hr />
-    <main style="background-color:lightgray">
-        <div class="container py-5">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                Email Me Now!
-            </button>
-            <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mylabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="mylabel">Email Mark D. Albin</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="" action="mailto:malbin@itmsnv.com" method="post" enctype="text/plain">
-                                <h4 class="card-title">Contact Us</h4>
-                                <p class="card-text">
-                                    Please complete the below HTML form.<br />
-                                    <div class="form-group">
-                                        <label>Full Name: </label><br />
-                                        <input name="FullName" value="" type="text" aria-label="First and Last Name" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label>
-                                            Email Address:
-                                        </label><br />
-                                        <input name="EmailAddress" type="email" x-moz-errormessage="Please specify a valid email address.">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="comment">Comment:</label>
-                                        <textarea name="Comment" class="form-control" rows="5"></textarea>
-                                    </div>
-                                </p>
-                                <button type="submit" name="">Send Email</button>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                                Close
-                            </button>
+
+        <div class="container text-white">
+
+            <h1 class="display-4">Bootstrap 4.o</h1>
+            <p class="lead">This is a modal.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+
+        </div>
+        </div>
+        <hr />
+        <main style="background-color:lightgray">
+            <div class="container py-5">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    Email Me Now!
+                </button>
+                <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mylabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mylabel">Email Mark D. Albin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="" action="mailto:malbin@itmsnv.com" method="post" enctype="text/plain">
+                                    <h4 class="card-title">Contact Us</h4>
+                                    <p class="card-text">
+                                        Please complete the below HTML form.<br />
+                                        <div class="form-group">
+                                            <label>Full Name: </label><br />
+                                            <input name="FullName" value="" type="text" aria-label="First and Last Name" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label>
+                                                Email Address:
+                                            </label><br />
+                                            <input name="EmailAddress" type="email" x-moz-errormessage="Please specify a valid email address.">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="comment">Comment:</label>
+                                            <textarea name="Comment" class="form-control" rows="5"></textarea>
+                                        </div>
+                                    </p>
+                                    <button type="submit" name="">Send Email</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <hr />
-    <footer style="background-color:dodgerblue">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 1</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 2</h2>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-center">Footer Section 3</h2>
+        </main>
+        <hr />
+        <footer style="background-color:dodgerblue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="text-center">Footer Section 1</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center">Footer Section 2</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="text-center">Footer Section 3</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script href="Scripts/jquery-3.0.0.min.map"></script>
-    <script src="Scripts/popper.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script href="Scripts/jquery-3.0.0.min.map"></script>
+        <script src="Scripts/popper.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>
